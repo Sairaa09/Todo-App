@@ -36,14 +36,18 @@ function App() {
   };
 
   const handleDelete=(index)=>{
-    let deletTodo=[...allTodos];
+   
+   let confirmation=confirm("are you sure you want to delete this todo?")
+   if(confirmation){
+      let deletTodo=[...allTodos];
    
     deletTodo.splice(index,1);
     
     
     localStorage.setItem('todoList',JSON.stringify(deletTodo))
     setAllTodos(deletTodo)
-    
+   
+  }
   }
   const handleCompletedTask=(index)=>{
     let completedTask=[...completed]
@@ -51,28 +55,38 @@ function App() {
     
     setcompleted(completedTask)
   localStorage.setItem('completetask',JSON.stringify(completedTask))
+  
+let deletTodo=[...allTodos];
+   
+deletTodo.splice(index,1);
 
-handleDelete()
+localStorage.setItem('todoList',JSON.stringify(deletTodo))
+setAllTodos(deletTodo)
 
   
     
   }
   const handleCompleteDelete=(index)=>{
+    let confirmation=confirm("are you sure you want to delete this todo?")
+    if(confirmation){
    let deleteCompleteTask=[...completed]
    deleteCompleteTask.splice(index,1)
    localStorage.setItem('complete',JSON.stringify(deleteCompleteTask));
    setcompleted(deleteCompleteTask)
   }
+  }
 
   const handleEdit=(index)=>{
         let editTodo=allTodos[index]
-        console.log(editTodo.title);
-        console.log(editTodo.description);
-        
         setTitle(editTodo.title)
         setDescription(editTodo.description)
         
-        handleDelete()
+        let deletTodo=[...allTodos];
+   
+        deletTodo.splice(index,1);
+        
+        localStorage.setItem('todoList',JSON.stringify(deletTodo))
+        setAllTodos(deletTodo)
     
   }
 
