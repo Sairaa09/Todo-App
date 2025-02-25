@@ -1,0 +1,37 @@
+.Navbar{
+    background-color: #343534;
+    box-shadow: 0px 0 8px black;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+}
+
+.logo{
+    font-size: 34px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.logo:hover{
+    text-shadow: 1px 1px 8px #00dfc4;
+    
+}
+
+ul{
+    display: flex;
+    gap: 44px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+ul li{
+    list-style: none;
+    cursor: pointer;
+}
+ul li:hover{
+    color:#00dfc4;
+    text-decoration: underline;
+    /* text-shadow: 3px 3px 5px #00dfc4; */
+    
+}

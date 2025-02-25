@@ -3,6 +3,7 @@ import "./App.css";
 import { AiFillDelete } from "react-icons/ai";
 import { FaCheck } from "react-icons/fa";
 import { AiTwotoneEdit } from "react-icons/ai";
+import Navbar from "./components/Navbar";
 
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
 
   const handleDelete=(index)=>{
    
-   let confirmation=confirm("are you sure you want to delete this todo?")
+   let confirmation=confirm("Are you sure you want to delete this todo?")
    if(confirmation){
       let deletTodo=[...allTodos];
    
@@ -55,7 +56,7 @@ function App() {
     
     setcompleted(completedTask)
   localStorage.setItem('completetask',JSON.stringify(completedTask))
-  
+
 let deletTodo=[...allTodos];
    
 deletTodo.splice(index,1);
@@ -67,7 +68,7 @@ setAllTodos(deletTodo)
     
   }
   const handleCompleteDelete=(index)=>{
-    let confirmation=confirm("are you sure you want to delete this todo?")
+    let confirmation=confirm("Are you sure you want to delete this todo?")
     if(confirmation){
    let deleteCompleteTask=[...completed]
    deleteCompleteTask.splice(index,1)
@@ -103,6 +104,8 @@ setAllTodos(deletTodo)
 
   return (
     <>
+    <Navbar/>
+    <div className="main">
       <h2>To-Do List App</h2>
 
       <div className="container">
@@ -165,7 +168,7 @@ setAllTodos(deletTodo)
               
                 <div className="task">
                   <div >
-                  <FaCheck className=" check-icon" onClick={()=>handleCompletedTask(index)}/>
+                    <input type="checkbox" className=" check-icon" onClick={()=>handleCompletedTask(index)} />
                   </div>
                 <div>
                 <h3>{item.title}</h3>
@@ -203,6 +206,7 @@ setAllTodos(deletTodo)
          
      
     
+      </div>
       </div>
     </>
   );
