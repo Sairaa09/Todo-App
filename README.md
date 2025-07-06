@@ -36,7 +36,7 @@
 
 ## 📖 Overview
 
-**Todo App (React)** is a sleek, simple, and fast productivity tool to manage your daily tasks — built entirely with **React**, styled using **CSS Modules**, and bundled with **Vite** for lightning-fast development.
+**Todo App (React)** is a sleek, simple, and fast productivity tool to manage your daily tasks built entirely with **React**, styled using **CSS Modules**, and bundled with **Vite** for lightning-fast development.
 
 It uses **LocalStorage** to persist tasks even after page refreshes, so you never lose track of your goals!
 
