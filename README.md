@@ -87,7 +87,7 @@ npm run dev
 - Mark tasks as completed by clicking the checkbox.
 - Delete tasks using the delete button.
 - All tasks are saved automatically using LocalStorage.
-- Works offline — no database or login required.
+- Works offline no database or login required.
 
 ---
 
