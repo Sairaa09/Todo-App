@@ -5,9 +5,12 @@
 *Plan Better, Get More Done, React Way!*
 
 ![React](https://img.shields.io/badge/Built%20With-React-61DAFB?logo=react)
+![Tailwind](https://img.shields.io/badge/Styled%20With-TailwindCSS-38B2AC?logo=tailwindcss)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 ![Status](https://img.shields.io/badge/Status-Completed-blue)
 ![Last Update](https://img.shields.io/badge/Last%20Update-July%202025-lightgrey)
+[![Live Preview](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge)](https://todo-app-nine-dusky-54.vercel.app/)
+
 
 ---
 
