@@ -52,7 +52,6 @@ It uses **LocalStorage** to persist tasks even after page refreshes, so you neve
 
 ---
 
----
 
 ## 🚀 Installation
 
