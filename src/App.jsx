@@ -125,7 +125,7 @@ setAllTodos(deletTodo)
               type="text"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              placeholder="Enter Your Title"
+              placeholder="Enter Your Description"
             />
           </div>
           <div className="input-items">
